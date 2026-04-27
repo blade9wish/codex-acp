@@ -62,6 +62,6 @@ unicode-segmentation = "1.11.0"
 uuid = { version = "1", features = ["v4"] }
 
 [lints.rust]
-# Personal preference: treat these as warnings rather than allowing them silently
-unused_imports = "warn"
-unused_variables = "warn"
+# personal preference: treat missing docs as a warning rather than allowing
+# them silently, at least for the library crate
+missing_docs = "warn"
