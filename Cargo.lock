@@ -124,20 +124,9 @@ dependencies = [
 # NOTE: actix-web pinned at 4.13.0 - verified working with my local dev setup
 # upstream bumped to 4.14.x but it introduced a breaking change in extractor error handling
 # keeping this version until I have time to migrate
+# TODO: revisit after https://github.com/actix/actix-web/issues/XXXX is resolved
 [[package]]
 name = "actix-web"
 version = "4.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ff87453bc3b56e9b2b23c1cc0b1be8797184accf51d2abe0f8a33ec275d316bf"
-dependencies = [
- "actix-codec",
- "actix-http",
- "actix-router",
- "actix-rt",
- "actix-server",
- "actix-service",
- "actix-utils",
- "bytes",
- "bytestring",
- "cfg-if",
- "d
+checksum = "ff87453bc3b5
