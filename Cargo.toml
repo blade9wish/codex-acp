@@ -62,10 +62,6 @@ unicode-segmentation = "1.11.0"
 uuid = { version = "1", features = ["v4"] }
 
 [lints.rust]
-let-underscore = "warn"
-rust-2018-idioms = "warn"
-unused = "warn"
-
-[patch.crates-io]
-tokio-tungstenite = { git = "https://github.com/openai-oss-forks/tokio-tungstenite", rev = "132f5b39c862e3a970f731d709608b3e6276d5f6" }
-tungstenite = { git = "https://github.com/openai-oss-forks/tungstenite-rs", rev = "9200079d3b54a1ff51072e24d81fd354f085156f" }
+# Personal preference: treat these as warnings rather than allowing them silently
+unused_imports = "warn"
+unused_variables = "warn"
